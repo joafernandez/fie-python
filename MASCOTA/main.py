@@ -1,6 +1,6 @@
-from gato import Gato 
-from perro import Perro
-from mascota import Mascota
+from MASCOTA.gato import Gato 
+from MASCOTA.perro import Perro
+from MASCOTA.mascota import Mascota
 
 def main () :
     
@@ -18,8 +18,8 @@ def main () :
                    
                    
                    
-    mi_perro = Perro("raul")
-    tu_gato = Gato("rosi")
+    mi_perro = Perro("KKKaul")
+    tu_gato = Gato("rHHHosi")
     
    
     

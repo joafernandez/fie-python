@@ -1,4 +1,4 @@
-from mascota import Mascota
+from MASCOTA.mascota import Mascota
 
 class Perro:(Mascota)
     def __init__(self, nombre ) :  
