@@ -1,13 +1,12 @@
-
-from mascota import Mascota 
+from datetime import date, timedelta
+from mascota import Mascota
 
 class Perro(Mascota):
-    def __init__(self, nombre, tReahb, edad, fIngreso, doc):
-        super() .__init__(nombre, tReahb, edad, fIngreso)
-        self.doc=doc
-        
-        #joa
-        
-       
-    
-        
+    def disponible(self):
+        return (not self.adoptada) and (date.today() >= self.fecha_ingreso + timedelta(days=30))
+
+    def saludar(self):
+        if self.disponible():
+            print("Guau")
+            
+# el que sabe cuantos perro se puede adopatar es la clase PERRO 
