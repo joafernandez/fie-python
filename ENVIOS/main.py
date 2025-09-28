@@ -4,7 +4,7 @@ from strategy_recarga import Categoria, Sobrepeso, Arbitrario
 from strategy_impuesto import Iva, Multicategoria, Aduanero, Extrano
 from administracion import Administracion
 
-def main():               #MAIN DE PRUEBA DEL CHAT/// FUNCIONA:) HACER YO !!!!!!!!!
+def main():               #MAIN DE PRUEBA/// FUNCIONA:) HACER OTRO !!!!!!!!!
     # Ubicaciones
     origen1 = Ubicacion("Buenos Aires", "Argentina")
     destino1 = Ubicacion("Utrecht", "Paises Bajos")
