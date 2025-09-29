@@ -1,0 +1,30 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>ESTRATEGIA_PELI</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>50</y><w>140</w><h>70</h></coordinates><panel_attributes>PERSONA
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>200</y><w>140</w><h>70</h></coordinates><panel_attributes>ENTRADA
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>200</y><w>140</w><h>70</h></coordinates><panel_attributes>SALA
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>310</y><w>140</w><h>70</h></coordinates><panel_attributes>PELICULA
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>70</y><w>140</w><h>40</h></coordinates><panel_attributes>ESTRATEGIA _PERSONA</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>420</y><w>140</w><h>40</h></coordinates><panel_attributes>ESTRATEGIA _PELI</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>490</y><w>140</w><h>70</h></coordinates><panel_attributes>CLASE Z
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>490</y><w>140</w><h>70</h></coordinates><panel_attributes>CLASE TERROR
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>490</y><w>140</w><h>70</h></coordinates><panel_attributes>CLASE BIZARRA
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>110</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>230</y><w>90</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>260</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element></diagram>
