@@ -1,0 +1,54 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>350</x><y>240</y><w>140</w><h>80</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+Lugar
+--
+- provincia: str
+--
++ obtener_superficie(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>40</y><w>140</w><h>80</h></coordinates><panel_attributes>Oficina
+--
++ SUPERFICIE_FIJA: int
+--
++ obtener_superficie(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>220</y><w>140</w><h>80</h></coordinates><panel_attributes>Ciudad
+--
+- superficie: float
+--
++ obtener_superficie(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>370</y><w>140</w><h>90</h></coordinates><panel_attributes>ZonaRural
+--
+- ancho: float
+- largo: float
+--
++ obtener_superficie(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>230</y><w>160</w><h>120</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+Tarea
+--
+- nombre: str
+- fecha_inicio: date
+- costo: float
+- lugar: Lugar
+- dependencias: List&lt;Tarea&gt;
+--
++ margen_anterior(): int
++ se_puede_hacer(): bool
++ agregar_dependencia(t:Tarea)
++ impacto_financiero(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>450</y><w>160</w><h>90</h></coordinates><panel_attributes>TareaProduccion
+--
+- servicios: List&lt;float&gt;
+--
++ agregar_servicio(s:float)
++ impacto_financiero(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>450</y><w>160</w><h>90</h></coordinates><panel_attributes>TareaRecaudacion
+--
+- ingreso: float
+--
++ impacto_financiero(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>460</y><w>160</w><h>70</h></coordinates><panel_attributes>TareaReunion
+--
++ impacto_financiero(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>30</y><w>160</w><h>120</h></coordinates><panel_attributes>Proyecto
+--
+- nombre: str
+- presupuesto: float
+- tareas: List&lt;Tarea&gt;
+--
++ agregar_tarea(t:Tarea)
++ provincias_en_rango(desde,hasta): List&lt;str&gt;
++ saldo_en_fecha(fecha): float
++ superficie_promedio(): float
++ es_coherente(): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>270</y><w>80</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>340</y><w>140</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>340</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;110</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>340</y><w>260</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;240;120</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>140</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>70</y><w>80</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;200;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>270</y><w>110</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;150</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>270</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element></diagram>

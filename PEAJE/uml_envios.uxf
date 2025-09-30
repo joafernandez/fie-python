@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>20</y><w>200</w><h>100</h></coordinates><panel_attributes>Administración
+--
+- lista_envíos: List&lt;Envío&gt;
+--
++ agregar_envíos(listaEnvio: Envío): void
++ envíos_internacionales(): List&lt;Envío&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>170</y><w>260</w><h>220</h></coordinates><panel_attributes>Envío
+--
+- peso: float
+- precio_base: float
+- categoría: List
+- origen: Ubicación
+- destino: Ubicación
+--
++ mostrar_peso(): float
++ mostrar_precio_base(): float
++ mostrar_categoría(): List
++ mostrar_ubicación_origen(): Ubicación
++ mostrar_ubicación_destino(): Ubicación
++ precio_total(estrategia: Estrategia_recargo): float
++ calcular_recargo(estrategia: Estrategia_recargo): float
++ calcular_impuesto(estrategia: Estrategia_impuesto): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>470</y><w>180</w><h>120</h></coordinates><panel_attributes>Ubicación
+--
+- país: str
+- ciudad: str
+--
++ mostrar_país(): str
++ mostrar_ciudad(): str</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>0</y><w>200</w><h>80</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+Estrategia_recargo
+--
++ calcular_recargo(envio: Envío): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>120</y><w>150</w><h>70</h></coordinates><panel_attributes>Categoria
+--
++ calcular_recargo(envio: Envío): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>120</y><w>150</w><h>70</h></coordinates><panel_attributes>Sobrespeso
+--
++ calcular_recargo(envio: Envío): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>120</y><w>150</w><h>70</h></coordinates><panel_attributes>Arbitrario
+--
++ calcular_recargo(envio: Envío): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>260</y><w>220</w><h>80</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+Estrategia_impuesto
+--
++ impuesto(envio: Envío, estrategia: Estrategia_recargo): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>450</y><w>150</w><h>70</h></coordinates><panel_attributes>Iva
+--
++ impuesto(envio: Envío, estrategia: Estrategia_recargo): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>450</y><w>150</w><h>70</h></coordinates><panel_attributes>Multicategoría
+--
++ impuesto(envio: Envío, estrategia: Estrategia_recargo): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>460</y><w>150</w><h>70</h></coordinates><panel_attributes>Aduanero
+--
++ impuesto(envio: Envío, estrategia: Estrategia_recargo): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>510</y><w>150</w><h>70</h></coordinates><panel_attributes>Extraño
+--
++ impuesto(envio: Envío, estrategia: Estrategia_recargo): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>110</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>380</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>30;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>70</y><w>190</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;50</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>70</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>330</y><w>160</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>330</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;120</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>330</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;130</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>330</y><w>330</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;310;180</additional_attributes></element></diagram>
